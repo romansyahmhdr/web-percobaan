@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed; /* selalu di kiri atas dan tidak scroll */
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent; /* Tambahkan titik koma di sini */
+            color: white;
+            font-family: sans-serif;
+            z-index: 999; /* pastikan di atas elemen lain */
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .header-text {
+            font-size: 25px;
+        }
+
+        .content {
+            padding-top: 80px; /* biar gak ketindih header */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="92.jpg.png" alt="Gambar">
+        <div class="header-text">
+            <div class="judul">KELUARGA BESAR</div>
+            <div class="subjudul">XTC KEMBAR</div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>WELCOME LADS</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <div class="Lupa-password">
+                <label><input type="checkbox"> Ingatkan saya</label>
+                <a href="#">Lupa password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+          
+            <div class="daftar-akun">
+                <p>Tidak memiliki akun? <a href="#">daftar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form secara default
+            
+            // Ganti URL di bawah ini dengan URL yang Anda inginkan
+            window.location.href = "https://web-portofolio-puce-gamma.vercel.app/"; // Ganti dengan URL yang sesuai
+        });
+    </script>
+</body>
+</html>
